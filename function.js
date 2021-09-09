@@ -6,19 +6,15 @@ function evenify(num) {
           console.log(num*2 , ':is odd number')
      }
 }
-
-
-nums = [5, 12, 89, 45, 18, 8];
-
- for (i = 0; i< nums.length; i++){ 
+function evenify_all(nums) {
+     for (i = 0; i< nums.length; i++){ 
      const num =  nums[i];
      evenify(num)
  }
- 
+}
 
+nums = [5, 12, 89, 45, 18, 8];
+ evenify_all(nums)
 
  friends_age = [13, 17, 19, 20, 18];
- for (let i = 0; i < friends_age.length; i++) {
-     const age = friends_age[i];
-     evenify(age)
- }
+evenify_all(friends_age);
