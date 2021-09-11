@@ -9,11 +9,24 @@
 
 <body>
     <h1 onclick="handleclick()">Exploring Events</h1>
-    <button onclick="handleclick()">Click me</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet beatae suscipit, et magnam iure quaerat reiciendis consectetur vitae laudantium iste maiores molestias, ratione ut inventore perferendis aliquid, voluptatem deserunt neque.</p>
+    <p>Adipisci magni nobis accusamus cupiditate velit itaque suscipit, consequuntur temporibus? Esse iste id commodi illo officia delectus, harum accusamus necessitatibus laborum suscipit molestiae, ipsum ex dolor saepe doloremque. Dolores, quae.</p>
+    <p>Expedita, magnam blanditiis. Deserunt autem est corporis ex dolorem, ab nobis quo ipsum natus tempora consequuntur impedit esse sunt, officiis enim alias quidem. Placeat sunt quos aut dignissimos earum ut.</p>
+    <button>Click me-0</button>
+    <button id="second">click me-1</button>
+    <button>click me-2</button>
+    <button id = "lastPerson">click me-3</button>
     <script>
-        function handleclick(){
-            console.log('someone Clicked me');
-        }
+           document.getElementById('lastPerson').addEventListener('click', function(){
+               document.body.style.color = 'tomato' ;
+           }) 
+        // function handleClick(){
+        //     document.body.style.backgroundcolor ='cyan';
+        // }
+        // const secondButton = document.getElementById('second');
+        // secondButton.addEventListener('click',handleClick );
+        // secondButton.onclick = handleClick;
+            
     </script>
 </body>
 </html>
